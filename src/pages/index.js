@@ -1,4 +1,56 @@
 import Minesweeper from '@/components/Minesweeper'
+import React from 'react';
+
+const DirectoryHeader = () => {
+  const tags = [
+    { name: 'AI business tools', count: 15 },
+    { name: 'AI image Transformer', count: 9 },
+    { name: 'AI security tool', count: 2 },
+    { name: 'AI education', count: 18 },
+    { name: 'AI Tools for Entertainment', count: 31 },
+    { name: 'AI detector', count: 5 },
+    { name: 'AI Source', count: 6 },
+    { name: 'AI Video Editor', count: 4 },
+    { name: 'AI Productivity Tool', count: 47 },
+    { name: 'AI avatar generators', count: 5 },
+    { name: 'AI Reader', count: 1 },
+    { name: 'AI Humanizers', count: 13 },
+    { name: 'AI art tools', count: 9 },
+    { name: 'AI animation', count: 21 },
+  ];
+
+  return (
+    <div className="max-w-6xl mx-auto px-4 py-12">
+      {/* Header Section */}
+      <div className="text-center mb-12">
+        <h1 className="text-5xl font-bold mb-4">
+          Woy AI Tools Directory
+        </h1>
+        <p className="text-xl text-gray-600">
+          Discover the top AI tools of 2025 with the Woy.ai AI Directory!
+        </p>
+      </div>
+
+      {/* Tags Section */}
+      <div className="flex flex-wrap gap-3 justify-center">
+        {tags.map((tag, index) => (
+          <button
+            key={index}
+            className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-300 transition-colors"
+          >
+            <span className="text-gray-700">{tag.name}</span>
+            <span className="ml-2 text-orange-500">({tag.count})</span>
+          </button>
+        ))}
+        <button className="inline-flex items-center px-4 py-2 rounded-full bg-white border border-gray-200 hover:border-gray-300 transition-colors">
+          <span className="text-gray-700">More +</span>
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default DirectoryHeader;
 
 export default function Home() {
   return (
