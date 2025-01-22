@@ -3,7 +3,7 @@ import Minesweeper from '@/components/Minesweeper'
 import React from 'react';
 import { Globe } from 'lucide-react';
 
-const DirectoryHeader = () => {
+export const DirectoryHeader = () => {
   const tags = [
     { name: 'AI business tools', count: 15 },
     { name: 'AI image Transformer', count: 9 },
@@ -88,7 +88,7 @@ const DirectoryHeader = () => {
   );
 };
 
-export default DirectoryHeader;
+//export default DirectoryHeader;
 
 export default function Home() {
   return (
