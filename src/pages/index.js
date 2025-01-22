@@ -94,11 +94,7 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
     <DirectoryHeader />
-      <nav className="bg-blue-600 text-white p-4">
-        <div className="container mx-auto">
-          <h1 className="text-2xl font-bold">扫雷游戏10：12</h1>
-        </div>
-      </nav>
+      
 
       <main className="container mx-auto py-8">
         <div className="max-w-4xl mx-auto bg-white rounded-lg shadow-lg p-6">
