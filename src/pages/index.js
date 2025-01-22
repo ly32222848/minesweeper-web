@@ -93,6 +93,7 @@ export const DirectoryHeader = () => {
 export default function Home() {
   return (
     <div className="min-h-screen bg-gray-100">
+    <DirectoryHeader />
       <nav className="bg-blue-600 text-white p-4">
         <div className="container mx-auto">
           <h1 className="text-2xl font-bold">扫雷游戏</h1>
