@@ -96,7 +96,7 @@ export default function Home() {
     <DirectoryHeader />
       <nav className="bg-blue-600 text-white p-4">
         <div className="container mx-auto">
-          <h1 className="text-2xl font-bold">扫雷游戏</h1>
+          <h1 className="text-2xl font-bold">扫雷游戏10：12</h1>
         </div>
       </nav>
 
